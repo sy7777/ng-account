@@ -15,11 +15,11 @@ export class MenuComponent implements OnInit {
   tintColor: string = '#108ee9';
   unselectedTintColor: string = '#888';
   tabbarStyle: object = {
-    position: 'fixed',
-    height: '100%',
+    position: 'fixed', // 使按钮固定于可视窗口的底部
+    bottom: 0,
     width: '100%',
-    top: 0
-  };
+    height: '3rem', // 设置固定高度
+  }
   selectedIndex: number = 0;
 
   constructor(private router: Router) { }
@@ -29,7 +29,7 @@ export class MenuComponent implements OnInit {
       .subscribe((event: any) => {
         if (event instanceof NavigationStart) {
           const url = event.url.substring(1);
-          switch(url) {
+          switch (url) {
             case "accounting":
               this.selectedIndex = 0;
               break;
@@ -37,7 +37,7 @@ export class MenuComponent implements OnInit {
               this.selectedIndex = 1;
               break;
           }
-          
+
         }
       })
   }

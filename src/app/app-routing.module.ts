@@ -4,7 +4,10 @@ import {AccountingComponent} from './views/accounting/accounting.component';
 import { StatisticsComponent } from './views/statistics/statistics.component';
 
 const routes: Routes = [
-  { path: "accounting", component: AccountingComponent },
+  { path: "accounting", component: AccountingComponent,
+    
+},
+  
   { path: "statistics", component: StatisticsComponent },
   { path: "", redirectTo:"accounting", pathMatch:"full"},
   { path: "**", redirectTo: "accounting", pathMatch: "full" }

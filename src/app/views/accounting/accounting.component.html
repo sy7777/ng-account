@@ -1,1 +1,14 @@
-<p>accounting works!</p>
+<!-- <p>accounting works!</p>
+<div class="sub-title">Always square grid item</div> -->
+<!-- <Grid [activeStyle]="true" [data]="data" (onClick)="click($event)"></Grid> -->
+<WhiteSpace [size]="'lg'"></WhiteSpace>
+<WingBlank id="wing-blank">
+  <SegmentedControl [values]="['Income', 'Expenses']" (onChange)="choose($event)"></SegmentedControl>
+  <WhiteSpace [size]="'lg'"></WhiteSpace>
+  <InputItem [type]="'money'" [clear]="false" [placeholder]="'$0.00'" [focus]="numberFocus" [content]="priceItem"
+    [extra]="'$'" [(ngModel)]="amount" (onChange) = "saveAmount()"></InputItem>
+    <WhiteSpace [size]="'lg'"></WhiteSpace>
+   <Grid [data]="data" [isCarousel]="true" (onClick)="click($event)" [hasLine] = "false"></Grid>
+</WingBlank>
+
+

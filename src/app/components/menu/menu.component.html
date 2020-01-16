@@ -1,8 +1,8 @@
 <TabBar [hidden]="hidden" [barTintColor]="'white'" [tintColor]="tintColor" [ngStyle]="tabbarStyle"
   [activeTab]="selectedIndex" [unselectedTintColor]="unselectedTintColor" [tabBarPosition]="topFlag ? 'top' : 'bottom'"
-  (onPress)="tabBarTabOnPress($event)">
+  (onPress)="tabBarTabOnPress($event)" id="ng-tabbar">
 
-  <TabBarItem [title]="'Accounting'" [key]="1" [dot]="true" [icon]="icon3" [selectedIcon]="icon33">
+  <TabBarItem [title]="'Accounting'" [key]="1"  [icon]="icon3" [selectedIcon]="icon33">
     <ng-template #icon3>
       <div
         style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg') center center / 21px 21px no-repeat;">
