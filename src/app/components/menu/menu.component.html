@@ -1,0 +1,29 @@
+<TabBar [hidden]="hidden" [barTintColor]="'white'" [tintColor]="tintColor" [ngStyle]="tabbarStyle"
+  [activeTab]="selectedIndex" [unselectedTintColor]="unselectedTintColor" [tabBarPosition]="topFlag ? 'top' : 'bottom'"
+  (onPress)="tabBarTabOnPress($event)">
+
+  <TabBarItem [title]="'Accounting'" [key]="1" [dot]="true" [icon]="icon3" [selectedIcon]="icon33">
+    <ng-template #icon3>
+      <div
+        style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg') center center / 21px 21px no-repeat;">
+      </div>
+    </ng-template>
+    <ng-template #icon33>
+      <div
+        style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg') center center / 21px 21px no-repeat;">
+      </div>
+    </ng-template>
+  </TabBarItem>
+  <TabBarItem [title]="'My Statistics'" [key]="2" [icon]="icon4" [selectedIcon]="icon44">
+    <ng-template #icon4>
+      <div
+        style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg') center center / 21px 21px no-repeat;">
+      </div>
+    </ng-template>
+    <ng-template #icon44>
+      <div
+        style="width:22px;height: 22px;background: url('https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg') center center / 21px 21px no-repeat;">
+      </div>
+    </ng-template>
+  </TabBarItem>
+</TabBar>

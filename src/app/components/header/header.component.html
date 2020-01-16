@@ -1,0 +1,11 @@
+<Navbar [leftContent]="leftContent" [rightContent]="rightContent" [mode]="'dark'">
+  {{title}}
+</Navbar>
+<ng-template #leftContent>
+  <Icon [type]="'left'"></Icon>
+</ng-template>
+
+<ng-template #rightContent>
+  <Icon [type]="'search'" [ngStyle]="{ marginRight: '16px' }"></Icon>
+  <Icon [type]="'ellipsis'"></Icon>
+</ng-template>
