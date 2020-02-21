@@ -27,7 +27,10 @@
               "node_modules/ng-zorro-antd-mobile/src/ng-zorro-antd-mobile.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+             
+              // "../node_modules/echarts/dist/echarts.min.js"
+            ]
           },
           "configurations": {
             "production": {

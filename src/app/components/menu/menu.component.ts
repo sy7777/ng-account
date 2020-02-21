@@ -36,6 +36,9 @@ export class MenuComponent implements OnInit {
             case "statistics":
               this.selectedIndex = 1;
               break;
+            case "transaction":
+              this.selectedIndex = 2;
+              break;
           }
 
         }
@@ -50,8 +53,11 @@ export class MenuComponent implements OnInit {
       case 1:
         this.router.navigateByUrl("statistics");
         break;
+     
+      case 2:
+        this.router.navigateByUrl("transaction")
     }
-
+    // console.log(pressParam);
     this.selectedIndex = pressParam.index;
   }
 }

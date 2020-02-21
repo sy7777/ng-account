@@ -20,8 +20,10 @@ export class HeaderComponent implements OnInit {
     this.router.events
       .subscribe((event: any) => {
         if (event instanceof NavigationStart) {
+          // console.log(event.url.substring(1))
           const title = event.url.substring(1).toUpperCase();
           this.title = title;
+          
         }
       })
 
